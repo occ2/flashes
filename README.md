@@ -2,10 +2,10 @@
 
 This package is extra contrib of nette/application flash messages. It use Twitter Bootstrap4 styles (alert). If you need use it please move flashes.latte into your application template directory (or your Control template directory)
 
-__ Installation: __
-_composer require occ2/flashes_
+#### Installation:
+composer require occ2/flashes
 
-__ Usage: __
+#### Usage:
 In presenter
 
 	<?php
@@ -30,7 +30,7 @@ In presenter
 		}
 	}
 	
-### Params of flashMessage() function
+#### Params of flashMessage() function
 
 1. $message - alert title
 2. $type - alert type (success, primary, info, warning, danger)
