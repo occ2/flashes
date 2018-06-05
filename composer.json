@@ -1,0 +1,22 @@
+{
+    "name": "occ2/flashes",
+    "description": "Extra contribute of Nette Application flash messages with Bootstrap4 alert style",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0",
+        "nette/application": "^2.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "occ2\\flashes\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milan Onderka",
+            "email": "milan_onderka@occ2.cz"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,23 @@
+{snippet flashesSnippet}
+    {foreach $flashes as $message}
+        <div class="unfocused flashes width{$message->width} alert alert-{$message->type} fade show" role="alert">
+            <h5 class="alert-heading">
+                {if $message->icon!=null}<span class="fa fa-{$message->iconSize} fa-{$message->icon}"> </span>{/if}
+                {$message->title|translate}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </h5>
+            {if $message->comment!=null}<p>{$message->comment|translate}</p>{/if} 
+        </div>   
+        <script>
+          $(document).ready(function(){
+                $(".alert").slideDown();
+                setTimeout(
+                    function(){
+                        $(".alert").slideUp();
+                    }, {$message->timeout}*1000);
+            });
+        </script>
+    {/foreach}
+{/snippet}
